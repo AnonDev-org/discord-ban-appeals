@@ -25,7 +25,7 @@ router.get("/oauth-callback", async (req, res) => {
     const data = await result.json();
     if (!result.ok) {
       console.log(data);
-      throw new Error("Failed to get user access token");
+      return res.status(500).end("Failed to get user access token")
     }
     const user = await getUserInfo(data.access_token);
     if (process.env.GUILD_ID && !process.env.SKIP_BAN_CHECK) {
@@ -133,7 +133,7 @@ router.post("/submission-created", urlencodedParser, async (req, res) => {
       return res.redirect("/success")
     } else {
       console.log(await result.json());
-      throw new Error("Failed to submit message");
+      return res.status(500).end("Failed to submit message")
     }
 
   } else {
