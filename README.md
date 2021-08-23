@@ -41,13 +41,13 @@ By using OAuth2, it ensures users can't forge or fake appeals.
 5. Create .env file with the following details
    | Field name            | Instructions                                                                                                               |
    | :-------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-   | Client ID             | You can get this from the **General Information** section for the application you created in step 1.                       |
-   | Client secret         | You can get this from the **General Information** section for the application you created in step 1.                       |
-   | Bot token             | Get this in the **Bot** section that you used in step 2.                                                                   |
-   | Guild ID              | This is where the developer mode you enabled in step 4 comes in handy. Right click your server icon and press **Copy ID**. |
-   | Channel ID            | Same deal than the guild ID, but with the channel you created in step 3.                                                   |
-   | JSON Web Token secret | Use a password manager to generate a password with ~50 characters, or mash your keyboard.                                  |
-   | URL           | URL (with protocol and without / at the end)  where is your application running              |
+   | DISCORD_CLIENT_ID      | You can get this from the **General Information** section for the application you created in step 1.                       |
+   | DISCORD_CLIENT_SECRET  | You can get this from the **General Information** section for the application you created in step 1.                       |
+   | DISCORD_BOT_TOKEN      | Get this in the **Bot** section that you used in step 2.                                                                   |
+   | GUILD_ID               | This is where the developer mode you enabled in step 4 comes in handy. Right click your server icon and press **Copy ID**. |
+   | APPEALS_CHANNEL        | Same deal than the guild ID, but with the channel you created in step 3.                                                   |
+   | JWT_SECRET             | Use a password manager to generate a password with ~50 characters, or mash your keyboard.                                  |
+   | URL                    | URL (with protocol and without / at the end)  where is your application running              |
 
   
 
@@ -55,7 +55,7 @@ By using OAuth2, it ensures users can't forge or fake appeals.
 
 `npm install` - Install dependencies
 
-`node build.js` - Make sure that your Discord client was connected to the gateway at least once (run this just firt time when you are setuping this)
+`node build.js` - Make sure that your Discord client was connected to the gateway at least once (run this just first time when you are setuping this)
 
 `npm start` or `node index.js` - Start the application
 
