@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sylveon/discord-ban-appeals.git"
+    "url": "git+https://github.com/AnonDev-org/discord-ban-appeals.git"
   },
   "engines": {
     "node": "12.x"
@@ -24,7 +24,7 @@
   "author": "AnonDev (anon.is-a.dev)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sylveon/discord-ban-appeals/issues"
+    "url": "https://github.com/AnonDev-org/discord-ban-appeals/issues"
   },
-  "homepage": "https://github.com/sylveon/discord-ban-appeals#readme"
+  "homepage": "https://github.com/AnonDev-org/discord-ban-appeals#readme"
 }
